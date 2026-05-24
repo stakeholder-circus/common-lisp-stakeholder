@@ -1,14 +1,11 @@
 # Toolchain
 
-This repository is scaffold-only for the Common Lisp HorizonLanguage target. It contains baseline coordination files only. No deterministic runtime validation is claimed.
+Common Lisp native validation uses CLISP on arm64 macOS.
 
-## Horizon target
+## Proven commands
 
-- Language id: common-lisp
-- Display name: Common Lisp
-- Horizon status: reserve-next20
-- Target class: parity-target
-- Repository: common-lisp-stakeholder
-## Scaffold scope
+- `clisp --version`
+- `make compiler-proof`
+- `make test`
 
-Toolchain status: scaffold-only. No compiler, interpreter, formatter, package manager, test runner, or deterministic runtime validation has been selected or proven.
+No Homebrew changes, Docker, Nix, Quicklisp, ASDF, or package-manager dependency is required for the current deterministic first tranche.
