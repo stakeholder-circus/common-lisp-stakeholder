@@ -1,14 +1,5 @@
 # Repository agent instructions
 
-This repository is scaffold-only for the Common Lisp HorizonLanguage target. It contains baseline coordination files only. No deterministic runtime validation is claimed.
+This repository contains the published CLISP deterministic runtime.
 
-## Horizon target
-
-- Language id: common-lisp
-- Display name: Common Lisp
-- Horizon status: reserve-next20
-- Target class: parity-target
-- Repository: common-lisp-stakeholder
-## Scaffold scope
-
-Operate this repo as scaffold-only. Do not infer runtime parity, deterministic execution, or validated behavior from these files. Future implementation work must add traceability before changing behavior.
+Preserve CLISP argument/exit semantics, the CLI and JSON contract, dedicated classic-six + modern-core families, grouped fallbacks, and provider fail-fast behavior. Native CLISP and Docker are mandatory gates.
